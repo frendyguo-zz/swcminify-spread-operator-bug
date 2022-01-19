@@ -6,6 +6,8 @@ function Form({
   onChange
 }) {
   useEffect(() => {
+    // If parent component spreads the props,
+    // will cause remount on every re-render
     console.log('EFFECT');
   }, []);
 
